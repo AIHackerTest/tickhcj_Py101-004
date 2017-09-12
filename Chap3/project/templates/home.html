@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>天气通</title>
+</head>
+<body>
+  <p align="center"><b>天气查询系统</b></p>
+  <form align="center" action="/" method='POST'>
+    城市：
+    <input type="text" name="city_name" placeholder="输入城市名">
+    <input type="submit" name="demand" value="查询">
+    <input type="submit" name="history" value="历史">
+    <input type="submit" name="help" value="帮助">
+  </form>
+  {% for mes in message %}
+  <p align="center" style="color:blue">{{ mes }}</p>
+  {% endfor %}
+</body>
+</html>
